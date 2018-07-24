@@ -1,0 +1,36 @@
+page-search {
+    .content {
+        background: linear-gradient(to bottom, rgb(77, 62, 163), rgb(120, 48, 179));
+    }
+
+    .top {
+        display: grid;
+        grid-template-columns: 150px auto auto;
+        padding:10px;
+
+        img {
+            border-radius: 10px;
+        }
+
+        ion-icon {
+            font-size: 3em;          
+        }
+    }
+
+    .search {
+        max-width: 250px;
+        border-radius: 15px;
+        ion-icon {
+            font-size: 2em;
+        }
+    }
+
+    .scroll-content {
+        overflow: hidden;
+
+    }    
+
+    .result {
+        margin-top: 20px;
+    }
+}

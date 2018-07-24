@@ -1,4 +1,6 @@
-<ion-content >
+
+<ion-content padding>
+
   <div class="content">
     <div class="top">
       <img src="../../assets/imgs/1.jpg">
@@ -6,26 +8,15 @@
       <button ion-button clear color="dark" type="button" (click)="openlogin()"><ion-icon name="md-contact"></ion-icon></button>
     </div>
     
-    <div class="middle">
-      <strong><h1>Delhi's Best Budget P.G's</h1></strong>
-      <p>100+ Budget P.G's | 15+ regions</p>
-
         <ion-item class="search">
           <ion-input  type="text" [(ngModel)]="region" placeholder="Search for regions"> </ion-input> 
           <button ion-button clear color="dark" type="button" item-right (click)="search()"> 
             <ion-icon name="search"> </ion-icon> </button> 
         </ion-item>
-     </div>
 
   </div>
 
-  <div class="quick">
-    <h3>Quick Search</h3>
-    <div class="circle">
-      <button ion-button class="btn" (click)='btn1()'>North Delhi</button>
-      <button ion-button class="btn" (click)='btn2()'>South Delhi</button>
-      <button ion-button class="btn" (click)='btn3()'>East Delhi</button>
-      <button ion-button class="btn" (click)='btn4()'>West Delhi</button>
-    </div>
+  <div class="result">
+    <h2>Search results for {{result}} </h2>
   </div>
 </ion-content>
